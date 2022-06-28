@@ -1,0 +1,8 @@
+<div class="col">
+    <img [src]='i.imageUrl' [alt]='i.name'
+     style="height:300px;width:300px">
+    <h3>{{i.name}}</h3>
+    <h3>{{i.description}}</h3>
+    <h3>Price:{{i.price|currency:'India'}}</h3>
+    <button class="btn btn-success" (click)="onEdit(i.id)">Edit Recipe</button>
+</div>

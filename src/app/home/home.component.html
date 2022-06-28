@@ -1,0 +1,16 @@
+<div class="row-md-2" id="whole">
+    <div class="col-md-2">
+        <ul class="list-group"  class="col">
+            <li *ngFor="let i of items;" >
+               <div id="top"   (click)="find(i.id)">
+                    <div class="datas" class="col-md-2">
+                        <img [src]='i.imageUrl' [alt]='i.name'
+                         style="height:350px;width:350px">
+
+                        <h2>{{i.name}}</h2>
+                    </div>
+               </div>
+            </li>
+        </ul>
+    </div>
+</div>
